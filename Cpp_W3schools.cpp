@@ -3,14 +3,13 @@ using namespace std;
 
 int main()
 {
-    // Good
-    int minutesPerHour = 60;
+    const int myNum = 15; // myNum will always be 15
+    // myNum = 10; // error: assignment of read-only variable 'myNum'
 
-    // OK, but not so easy to understand what m actually is
-    int m = 60;
-
-    cout << minutesPerHour << endl;
-    cout << m;
+    const int minutesPerHour = 60;
+    const float PI = 3.14;
+    cout << "minutesPerHour = " << minutesPerHour << "\n";
+    cout << "PI = " << PI;
 
     return 0;
 }
