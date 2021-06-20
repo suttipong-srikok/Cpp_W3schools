@@ -32,10 +32,6 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="Cpp_W3schools.cpp" />
-		<Unit filename="simple_calculator.cpp">
-			<Option link="0" />
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
