@@ -3,18 +3,18 @@ using namespace std;
 
 int main()
 {
-    /* Access Strings */
-    // You can access the characters in a string by referring to its index number inside square brackets [].
-    string myString = "Hello";
-    cout << myString[0] << "\n";
+    // It is possible to use the extraction operator >> on cin to display a string entered by a user:
+    //string firstName;
+    //cout << "Type your first name: ";
+    //cin >> firstName;
+    //cout << "Your name is: " << firstName << "\n\n";
+    // However, cin considers a space (whitespace, tabs, etc) as a terminating character, which means that it can only display a single word (even if you type many words)
 
-    // Note: String indexes start with 0: [0] is the first character. [1] is the second character, etc.
-    cout << myString[1] << "\n";
-
-    /* Change String Characters */
-    // To change the value of a specific character in a string, refer to the index number, and use single quotes:
-    myString[0] = 'J';
-    cout << myString << "\n";
+    // use the getline() function to read a line of text
+    string fullName;
+    cout << "Type your full name: ";
+    getline(cin, fullName);
+    cout << "Your name is: " << fullName << "\n";
 
     return 0;
 }
