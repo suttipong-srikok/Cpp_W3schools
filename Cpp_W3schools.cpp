@@ -3,26 +3,12 @@ using namespace std;
 
 int main()
 {
-    /* String Concatenation */
-    // you can concatenate strings with the + operator:
-    string firstName = "John ";
-    string lastName = "Doe";
-    string fullName = firstName + lastName;
-    cout << fullName << "\n";
+    // To get the length of a string, use the length() function:
+    string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    cout << "The length of the txt string is: " << txt.length() << "\n";
 
-    // you could also add a space with quotes (" " or ' '):
-    firstName = "Tom";
-    lastName = "Hanks";
-    fullName = firstName + " " + lastName;
-    cout << fullName << "\n";
-
-    /* Append */
-    // you can also concatenate strings with the append() function:
-    firstName = "Brian ";
-    lastName = "Greene";
-    fullName = firstName.append(lastName);
-    cout << fullName << "\n";
-    cout << "firstName after append is " << firstName << "\n";
+    // Tip: You might see some C++ programs that use the size() function to get the length of a string.
+    cout << "The txt.size() is: " << txt.size() << "\n";
 
     return 0;
 }
