@@ -3,48 +3,25 @@ using namespace std;
 
 int main()
 {
-    int x = 5;
-    cout << "x = " << x << "\n";
+    int x = 5, y = 3;
 
-    x += 3; // x = x + 3
-    cout << "x += 3; \nThe value of x is " << x << "\n";
+    // Equal to
+    cout << (x == y) << "\n"; // returns 0 (false) because 5 is not equal to 3
 
-    x -= 3; // x = x - 3
-    cout << "x -= 3; \nThe value of x is " << x << "\n";
+    // Not equal
+    cout << (x != y) << "\n"; // returns 1 (true) because 5 is not equal to 3
 
-    x *= 3; // x = x * 3
-    cout << "x *= 3; \nThe value of x is " << x << "\n";
+    // Greater than
+    cout << (x > y) << "\n"; // returns 1 (true) because 5 is greater than 3
 
-    x /= 3; // x = x / 3
-    cout << "x /= 3; \nThe value of x is " << x << "\n";
+    // Less than
+    cout << (x < y) << "\n"; // returns 0 (false) because 5 is not less than 3
 
-    x %= 3; // x = x % 3
-    cout << "x %= 3; \nThe value of x is " << x << "\n\n";
+    // Greater than or equal to
+    cout << (x >= y) << "\n"; // returns 1 (true) because 5 is greater than, or equal, to 3
 
-    x = 5;
-    cout << "x = " << x << "\n";
-    x &= 3; // x = x & 3
-    cout << "x &= 3; \nThe value of x is " << x << "\n\n";
-
-    x = 5;
-    cout << "x = " << x << "\n";
-    x |= 3; // x = x | 3
-    cout << "x |= 3; \nThe value of x is " << x << "\n\n";
-
-    x = 5;
-    cout << "x = " << x << "\n";
-    x ^= 3; // x = x ^ 3
-    cout << "x ^= 3; \nThe value of x is " << x << "\n\n";
-
-    x = 5;
-    cout << "x = " << x << "\n";
-    x >>= 3; // x = x >> 3
-    cout << "x >>= 3; \nThe value of x is " << x << "\n\n";
-
-    x = 5;
-    cout << "x = " << x << "\n";
-    x <<= 3; // x = x << 3
-    cout << "x <<= 3; \nThe value of x is " << x << "\n";
+    //Less than or equal to
+    cout << (x <= y) << "\n"; // returns 0 (false) because 5 is neither less than or equal to 3
 
     return 0;
 }
