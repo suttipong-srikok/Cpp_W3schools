@@ -3,21 +3,20 @@ using namespace std;
 
 int main()
 {
-    // Creating variable
-    int myNum = 5;              // Integer (whole number
-    float myFloatNum = 5.99;    // Floating point number
-    double myDoubleNum = 9.98;  // Floating point number
-    char myLetter = 'D';        // Charactor
-    bool myBoolean = true;      // Boolean
-    string myText = "Hello";    // String
+    int myNum = 1000;
+    cout << "myNum = " << myNum << "\n";
 
-    // Print variable values
-    cout << "int: " << myNum << "\n";
-    cout << "float: " << myFloatNum << "\n";
-    cout << "double: " << myDoubleNum << endl;
-    cout << "char: " << myLetter << endl;
-    cout << "bool: " << myBoolean << "\n";
-    cout << "string: " << myText << "\n";
+    float myFloat = 5.43210123;
+    cout << "myFloat = " << myFloat << "\n";
+
+    double myDouble = 19.98765432;
+    cout << "myDouble = " << myDouble << "\n";
+
+    // Scientific Numbers
+    float f1 = 35e3;
+    double d1 = 12E4;
+    cout << "f1 = " << f1 << endl;
+    cout << "d1 = " << d1;
 
     return 0;
 }
