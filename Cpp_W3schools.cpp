@@ -3,10 +3,14 @@ using namespace std;
 
 int main()
 {
-    bool isCodingFun = true;
-    bool isFishTasty = false;
-    cout << isCodingFun << "\n";    // Outputs 1 (true)
-    cout << isFishTasty;            // Outputs 0 (false)
+    char myGrade = 'B';
+    cout << "myGrade is " << myGrade << "\n";
+
+    // Alternatively, you can use ASCII values to display certain characters:
+    char a = 65, b = 66, c = 67;
+    cout << a;
+    cout << b;
+    cout << c;
 
     return 0;
 }
