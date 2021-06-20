@@ -1,48 +1,50 @@
 #include <iostream>
 using namespace std;
 
-void printXY(int x, int y)
-{
-    cout << "x = " << x << ", y = " << y << "\n";
-}
-
 int main()
 {
-    int sum1 = 100 + 50;    // 150 (100 + 50)
-    int sum2 = sum1 + 250;  // 400 (150+ 250)
-    int sum3 = sum2 + sum2; // 800 (400 + 400)
-    cout << sum1 << "\n";
-    cout << sum2 << "\n";
-    cout << sum3 << "\n\n";
+    int x = 5;
+    cout << "x = " << x << "\n";
 
-    /* Arithmetic Operators */
-    int x = 5, y = 3;
-    printXY(x, y);
+    x += 3; // x = x + 3
+    cout << "x += 3; \nThe value of x is " << x << "\n";
 
-    // Addition (+)
-    cout << "x + y = " << x + y << "\n"; // Adds together two values
+    x -= 3; // x = x - 3
+    cout << "x -= 3; \nThe value of x is " << x << "\n";
 
-    // Subtraction (-)
-    cout << "x - y = " << x - y << "\n"; // Subtracts one value from another
+    x *= 3; // x = x * 3
+    cout << "x *= 3; \nThe value of x is " << x << "\n";
 
-    // Multiplication (*)
-    cout << "x * y = " << x * y << "\n"; // Multiplies two values
+    x /= 3; // x = x / 3
+    cout << "x /= 3; \nThe value of x is " << x << "\n";
 
-    // Division (/)
-    x = 12;
-    printXY(x, y);
-    cout << "x / y = " << x / y << "\n"; // Divides one value by another
+    x %= 3; // x = x % 3
+    cout << "x %= 3; \nThe value of x is " << x << "\n\n";
 
-    // Modulus (%)
-    x = 5, y = 2;
-    printXY(x, y);
-    cout << "x % y = " << x % y << "\n"; // Returns the division remainder
+    x = 5;
+    cout << "x = " << x << "\n";
+    x &= 3; // x = x & 3
+    cout << "x &= 3; \nThe value of x is " << x << "\n\n";
 
-    // Increment (++)
-    cout << "++x = " << ++x << "\n"; // Increases the value of a variable by 1
+    x = 5;
+    cout << "x = " << x << "\n";
+    x |= 3; // x = x | 3
+    cout << "x |= 3; \nThe value of x is " << x << "\n\n";
 
-    // Decrement (--)
-    cout << "--y = " << --y; // Decreases the value of a variable by 1
+    x = 5;
+    cout << "x = " << x << "\n";
+    x ^= 3; // x = x ^ 3
+    cout << "x ^= 3; \nThe value of x is " << x << "\n\n";
+
+    x = 5;
+    cout << "x = " << x << "\n";
+    x >>= 3; // x = x >> 3
+    cout << "x >>= 3; \nThe value of x is " << x << "\n\n";
+
+    x = 5;
+    cout << "x = " << x << "\n";
+    x <<= 3; // x = x << 3
+    cout << "x <<= 3; \nThe value of x is " << x << "\n";
 
     return 0;
 }
