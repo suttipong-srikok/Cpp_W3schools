@@ -3,13 +3,10 @@ using namespace std;
 
 int main()
 {
-    const int myNum = 15; // myNum will always be 15
-    // myNum = 10; // error: assignment of read-only variable 'myNum'
-
-    const int minutesPerHour = 60;
-    const float PI = 3.14;
-    cout << "minutesPerHour = " << minutesPerHour << "\n";
-    cout << "PI = " << PI;
+    int x;
+    cout << "Type a number: "; // Type number and press enter
+    cin >> x; // Get user input from the keyboard
+    cout << "Your number is: " << x; // Display the input value
 
     return 0;
 }
