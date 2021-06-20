@@ -3,14 +3,11 @@ using namespace std;
 
 int main()
 {
-    char myGrade = 'B';
-    cout << "myGrade is " << myGrade << "\n";
+    // Create a string variable
+    string greeting = "Hello";
 
-    // Alternatively, you can use ASCII values to display certain characters:
-    char a = 65, b = 66, c = 67;
-    cout << a;
-    cout << b;
-    cout << c;
+    // Output string value
+    cout << greeting;
 
     return 0;
 }
