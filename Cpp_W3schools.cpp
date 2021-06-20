@@ -3,12 +3,18 @@ using namespace std;
 
 int main()
 {
-    // To get the length of a string, use the length() function:
-    string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    cout << "The length of the txt string is: " << txt.length() << "\n";
+    /* Access Strings */
+    // You can access the characters in a string by referring to its index number inside square brackets [].
+    string myString = "Hello";
+    cout << myString[0] << "\n";
 
-    // Tip: You might see some C++ programs that use the size() function to get the length of a string.
-    cout << "The txt.size() is: " << txt.size() << "\n";
+    // Note: String indexes start with 0: [0] is the first character. [1] is the second character, etc.
+    cout << myString[1] << "\n";
+
+    /* Change String Characters */
+    // To change the value of a specific character in a string, refer to the index number, and use single quotes:
+    myString[0] = 'J';
+    cout << myString << "\n";
 
     return 0;
 }
