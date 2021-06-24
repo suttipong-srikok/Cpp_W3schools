@@ -4,15 +4,20 @@ using namespace std;
 
 int main()
 {
-    int time = 20;
-    if (time < 18)
+    int time = 22;
+    if (time < 10)
     {
-        cout << "Good day";
+        cout << "Good morning.";
+    }
+    else if (time < 20)
+    {
+        cout << "Good day.";
     }
     else
     {
         cout << "Good evening.";
     }
+    // Outputs "Good evening."
 
     return 0;
 }
