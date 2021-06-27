@@ -3,19 +3,17 @@ using namespace std;
 
 int main()
 {
-    // While Loop
-    // The while loop loops through a block of code as long as a specified condition is true:
-
-    // In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:
+    // Do/While Loop
+    // This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
 
     int i = 0;
-    while (i < 5)
-    {
-        cout << i << "\n";
-        i++;
+    do {
+       cout << i << "\n";
+       i++;
     }
+    while (i < 5);
 
-    // Note: Do not forget to increase the variable used in the condition, otherwise the loop will never end!
+    // Do not forget to increase the variable used in the condition, otherwise the loop will never end!
 
     return 0;
 }
