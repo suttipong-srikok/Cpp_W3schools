@@ -3,18 +3,34 @@ using namespace std;
 
 int main()
 {
-    // C++ Continue
-    // The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+    // Break and Continue in While Loop
+    // You can also use break and continue in while loops:
 
-    // This example skips the value of 4:
+    // Break Example
+    /*
+    int i = 0;
+    while (i < 10)
+    {
+        cout << i << "\n";
+        i++;
+        if (i == 4)
+        {
+            break;
+        }
+    }
+    */
 
-    for (int i = 0; i < 10; i++)
+    // Continue Example
+    int i = 0;
+    while (i < 10)
     {
         if (i == 4)
         {
+            i++;
             continue;
         }
         cout << i << "\n";
+        i++;
     }
 
     return 0;
