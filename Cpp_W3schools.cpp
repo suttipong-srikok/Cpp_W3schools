@@ -3,22 +3,19 @@ using namespace std;
 
 int main()
 {
-    // The default Keyword
-    // The default keyword specifies some code to run if there is no case match:
+    // While Loop
+    // The while loop loops through a block of code as long as a specified condition is true:
 
-    int day = 4;
-    switch (day)
+    // In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:
+
+    int i = 0;
+    while (i < 5)
     {
-    case 6:
-        cout << "Saturday";
-        break;
-    case 7:
-        cout << "Sunday";
-        break;
-    default:
-        cout << "Looking forward to the Weekend";
+        cout << i << "\n";
+        i++;
     }
-    // Outputs "Looking forward to the Weekend"
+
+    // Note: Do not forget to increase the variable used in the condition, otherwise the loop will never end!
 
     return 0;
 }
