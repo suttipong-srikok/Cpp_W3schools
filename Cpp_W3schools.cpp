@@ -3,35 +3,16 @@ using namespace std;
 
 int main()
 {
-    // Break and Continue in While Loop
-    // You can also use break and continue in while loops:
+    // Access the Elements of an Array
+    // Note: Array indexes start with 0: [0] is the first element. [1] is the second element, etc.
 
-    // Break Example
-    /*
-    int i = 0;
-    while (i < 10)
-    {
-        cout << i << "\n";
-        i++;
-        if (i == 4)
-        {
-            break;
-        }
-    }
-    */
+    string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+    cout << cars[0] << "\n";
 
-    // Continue Example
-    int i = 0;
-    while (i < 10)
-    {
-        if (i == 4)
-        {
-            i++;
-            continue;
-        }
-        cout << i << "\n";
-        i++;
-    }
+    // Change an Array Element
+
+    cars[0] = "Opel";
+    cout << cars[0];
 
     return 0;
 }
