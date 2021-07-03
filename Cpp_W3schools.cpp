@@ -3,20 +3,14 @@ using namespace std;
 
 int main()
 {
-    // Omit Elements on Declaration
+    // Creating References
+    // A reference variable is a "reference" to an existing variable, and it is created with the & operator
 
-    // It is also possible to declare an array without specifying the elements on declaration, and add them later:
+    string food = "Pizza";
+    string &meal = food;
 
-    string cars[5];
-    cars[0] = "Volvo";
-    cars[1] = "BMW";
-    cars[2] = "Ford";
-    cars[3] = "Mazda";
-    cars[4] = "Tesla";
-    for (int i = 0; i < 5; i++)
-    {
-        cout << cars[i] << "\n";
-    }
+    cout << food << "\n";   // Outputs Pizza
+    cout << meal << "\n";   // Outputs Pizza
 
     return 0;
 }
