@@ -1,11 +1,8 @@
 #include <iostream>
 using namespace std;
 
-// Create a function
-void myFunction()
-{
-    cout << "I just got executed!\n";
-}
+// Function declaration
+void myFunction();
 
 int main()
 {
@@ -14,4 +11,10 @@ int main()
     myFunction();
 
     return 0;
+}
+
+// Function definition
+void myFunction()
+{
+    cout << "I just got executed!\n";
 }
