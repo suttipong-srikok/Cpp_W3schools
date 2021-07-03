@@ -3,14 +3,14 @@ using namespace std;
 
 int main()
 {
-    // Creating References
-    // A reference variable is a "reference" to an existing variable, and it is created with the & operator
+    // Memory Address
 
-    string food = "Pizza";
-    string &meal = food;
+    // When a variable is created in C++, a memory address is assigned to the variable. And when we assign a value to the variable, it is stored in this memory address.
+    // To access it, use the & operator, and the result will represent where the variable is stored:
 
-    cout << food << "\n";   // Outputs Pizza
-    cout << meal << "\n";   // Outputs Pizza
+       string food = "Pizza";
+
+       cout << &food;
 
     return 0;
 }
