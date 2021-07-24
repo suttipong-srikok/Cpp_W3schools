@@ -1,22 +1,18 @@
-// Default Parameter Value
-
-// You can also use a default parameter value, by using the equals sign (=).
-// If we call the function without an argument, it uses the default value ("Norway"):
+// Multiple Parameters
 
 #include <iostream>
 using namespace std;
 
-void myFunction(string country = "Norway")
+void myFunction(string fname, int age)
 {
-    cout << country << "\n";
+    cout << fname << " Refsnes. " << age << " years old. \n";
 }
 
 int main()
 {
-    myFunction("Sweden");
-    myFunction("India");
-    myFunction();
-    myFunction("USA");
+    myFunction("Liam", 3);
+    myFunction("Jenny", 14);
+    myFunction("Anja", 30);
 
     return 0;
 }
