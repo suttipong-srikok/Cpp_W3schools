@@ -1,28 +1,25 @@
-// Pass By Reference
+// Function Overloading
+// With function overloading, multiple functions can have the same name with different parameters
 
 #include <iostream>
 using namespace std;
 
-void swapNums(int &x, int &y)
+int plusFunc(int x, int y)
 {
-    int z = x;
-    x = y;
-    y = z;
+    return x + y;
+}
+
+double plusFunc(double x, double y)
+{
+    return x + y;
 }
 
 int main()
 {
-    int firstNum = 10;
-    int secondNum = 20;
-
-    cout << "Before swap: " << "\n";
-    cout << firstNum << secondNum << "\n";
-
-    // Call the function, which will change the values of firstNum and secondNum
-    swapNums(firstNum, secondNum);
-
-    cout << "After swap: " << "\n";
-    cout << firstNum << secondNum << "\n";
+    int myNum1 = plusFunc(8, 5);
+    double myNum2 = plusFunc(4.3, 6.26);
+    cout << "Int: " << myNum1 << "\n";
+    cout << "Double: " << myNum2;
 
     return 0;
 }
