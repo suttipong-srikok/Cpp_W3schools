@@ -1,22 +1,17 @@
-// Multiple Parameters
+// Return Values
 
 #include <iostream>
 using namespace std;
 
-void myFunction(string fname, int age)
+int myFunction(int x, int y)
 {
-    cout << fname << " Refsnes. " << age << " years old. \n";
+    return x + y;
 }
 
 int main()
 {
-    myFunction("Liam", 3);
-    myFunction("Jenny", 14);
-    myFunction("Anja", 30);
+    int z = myFunction(5, 3);
+    cout << z;
 
     return 0;
 }
-
-// A parameter with a default value, is often known as an "optional parameter".
-// From the example above, country is an optional parameter and
-// "Norway" is the default value.
