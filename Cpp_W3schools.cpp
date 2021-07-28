@@ -1,22 +1,21 @@
 #include <iostream>
 using namespace std;
 
-class MyClass       // The class
+class Car
 {
-public:             // Access specifier
-    void myMethod(); // Method/function defined inside the class
+public:
+    int speed(int maxSpeed);
 };
 
-// Method/function definition outside the class
-void MyClass::myMethod()
+int Car::speed(int maxSpeed)
 {
-    cout << "Hello World!";
+    return maxSpeed;
 }
 
 int main()
 {
-    MyClass myObj;      // Create an object of MyClass
-    myObj.myMethod();   // Call the method
+    Car myObj;  // Create an object of Car
+    cout << myObj.speed(200);   // Call the method with an argument
 
     return 0;
 }
