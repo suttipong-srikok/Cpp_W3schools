@@ -1,25 +1,24 @@
-// Function Overloading
-// With function overloading, multiple functions can have the same name with different parameters
-
 #include <iostream>
 using namespace std;
 
-int plusFunc(int x, int y)
+class MyClass           // The class
 {
-    return x + y;
-}
-
-double plusFunc(double x, double y)
-{
-    return x + y;
-}
+public:                 // Access specifier
+    int myNum;          // Attribute (int variable)
+    string myString;    // Attribute (string variable)
+};
 
 int main()
 {
-    int myNum1 = plusFunc(8, 5);
-    double myNum2 = plusFunc(4.3, 6.26);
-    cout << "Int: " << myNum1 << "\n";
-    cout << "Double: " << myNum2;
+    MyClass myObj;  // Create an object of MyClass
+
+    // Access attribute and set values
+    myObj.myNum = 15;
+    myObj.myString = "Some Text";
+
+    // Print attribute values
+    cout << myObj.myNum << "\n";
+    cout << myObj.myString;
 
     return 0;
 }
