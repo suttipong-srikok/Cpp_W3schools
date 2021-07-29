@@ -1,21 +1,17 @@
 #include <iostream>
 using namespace std;
 
-class Car
+class MyClass           // The Class
 {
-public:
-    int speed(int maxSpeed);
+public:                 // Access specifier
+    MyClass()           // Constructor
+    {
+        cout << "Hello World!";
+    }
 };
-
-int Car::speed(int maxSpeed)
-{
-    return maxSpeed;
-}
 
 int main()
 {
-    Car myObj;  // Create an object of Car
-    cout << myObj.speed(200);   // Call the method with an argument
-
+    MyClass myObj;  // Create an object of MyClass (this will call the constructor)
     return 0;
 }
